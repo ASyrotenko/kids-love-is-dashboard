@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kids-love-is-dashboard/static/css/main.b4380448.css",
+    "main.js": "/kids-love-is-dashboard/static/js/main.19626b8f.js",
+    "index.html": "/kids-love-is-dashboard/index.html",
+    "main.b4380448.css.map": "/kids-love-is-dashboard/static/css/main.b4380448.css.map",
+    "main.19626b8f.js.map": "/kids-love-is-dashboard/static/js/main.19626b8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4380448.css",
+    "static/js/main.19626b8f.js"
+  ]
+}
