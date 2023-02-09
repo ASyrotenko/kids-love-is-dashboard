@@ -54,5 +54,16 @@ export const productsOptions = {
       display: false,
       text: 'Kids Love Is ♥',
     },
+    datalabels: {
+      color: '#000',
+    },
+  },
+  scales: {
+    x: {
+      stacked: true,
+    },
+    y: {
+      stacked: true,
+    },
   },
 };

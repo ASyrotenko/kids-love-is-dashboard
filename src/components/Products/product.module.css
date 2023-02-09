@@ -5,6 +5,11 @@
 
 .title {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  text-align: center;
 }
 
 .list {
