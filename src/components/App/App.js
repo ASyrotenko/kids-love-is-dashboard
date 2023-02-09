@@ -1,9 +1,15 @@
-import { Dashboard } from "../Dashboard/Dashboard";
+import { Dashboard } from '../Dashboard/Dashboard';
+import { Products } from 'components/Products/Products';
 
-import "./App.css";
+import './App.css';
 
 function App() {
-  return <Dashboard />;
+  return (
+    <>
+      <Dashboard />
+      <Products />
+    </>
+  );
 }
 
 export default App;

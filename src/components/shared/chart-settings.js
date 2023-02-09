@@ -6,10 +6,10 @@ import {
   Title,
   Tooltip,
   Legend,
-} from "chart.js";
+} from 'chart.js';
 
-import { months, years, sum } from "./../shared/data-servises";
-import { colors } from "../shared/colors";
+import { months, years, sum } from './../shared/data-servises';
+import { colors } from '../shared/colors';
 
 ChartJS.register(
   CategoryScale,
@@ -20,20 +20,20 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+export const dashboardOptions = {
   responsive: true,
   plugins: {
     legend: {
-      position: "top",
+      position: 'top',
     },
     title: {
       display: false,
-      text: "Kids Love Is ♥",
+      text: 'Kids Love Is ♥',
     },
   },
 };
 
-export const dataBar = {
+export const dashboardData = {
   labels: months,
   datasets: years.map((year, i) => {
     return {
@@ -42,4 +42,17 @@ export const dataBar = {
       backgroundColor: colors[i],
     };
   }),
+};
+
+export const productsOptions = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: false,
+      text: 'Kids Love Is ♥',
+    },
+  },
 };

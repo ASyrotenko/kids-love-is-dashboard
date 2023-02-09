@@ -1,0 +1,22 @@
+.productsContainer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+
+  flex-basis: calc((100% - 20px) / 2);
+}
