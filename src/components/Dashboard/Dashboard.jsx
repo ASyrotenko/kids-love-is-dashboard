@@ -1,4 +1,5 @@
 import { Bar } from 'react-chartjs-2';
+
 import { dashboardOptions, dashboardData } from '../shared/chart-settings';
 
 import css from './dashboard.module.css';

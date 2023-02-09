@@ -1,6 +1,6 @@
 import source from '../../source.json';
 
-const { sales } = source;
+const { sales, products } = source;
 
 export const months = sales
   .map(({ month }) => month)
@@ -12,3 +12,9 @@ export const years = sales
 
 export const sum = year =>
   sales.filter(el => el.year === year).map(el => el.sum.toFixed(0));
+
+export const productsType = ['footwear', 'clothes', 'hats'];
+
+export const salesByYear = years.map(year =>
+  products.filter(product => product.year === year)
+);

@@ -8,8 +8,8 @@ import {
   Legend,
 } from 'chart.js';
 
-import { months, years, sum } from './../shared/data-servises';
-import { colors } from '../shared/colors';
+import { months, years, sum, productsType } from './../shared/data-servises';
+import { dashboardColors, productsColors } from '../shared/colors';
 
 ChartJS.register(
   CategoryScale,
@@ -19,6 +19,8 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+// Dashboard
 
 export const dashboardOptions = {
   responsive: true,
@@ -39,10 +41,12 @@ export const dashboardData = {
     return {
       label: year,
       data: sum(year),
-      backgroundColor: colors[i],
+      backgroundColor: dashboardColors[i],
     };
   }),
 };
+
+// Products
 
 export const productsOptions = {
   responsive: true,
@@ -66,4 +70,20 @@ export const productsOptions = {
       stacked: true,
     },
   },
+};
+
+export const productsData = year => {
+  const months = year.map(({ month }) => month);
+  return {
+    labels: months,
+    datasets: productsType.map((el, i) => {
+      return {
+        label: el[0].toLocaleUpperCase() + el.slice(1, el.length),
+        data: year.map(y => (y[el] * 100).toFixed(0)),
+        backgroundColor: productsColors[i],
+        borderWidth: 1,
+        borderColor: 'grey',
+      };
+    }),
+  };
 };
