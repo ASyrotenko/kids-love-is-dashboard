@@ -1,6 +1,6 @@
 import source from '../../source.json';
 
-const { sales, products } = source;
+const { sales } = source;
 
 export const months = sales
   .map(({ month }) => month)

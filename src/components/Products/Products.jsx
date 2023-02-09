@@ -1,7 +1,7 @@
 import { Bar } from 'react-chartjs-2';
 import { productsOptions } from '../shared/chart-settings';
 import source from '../../source.json';
-import { months, years, sum } from './../shared/data-servises';
+import { years } from './../shared/data-servises';
 import css from './product.module.css';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
