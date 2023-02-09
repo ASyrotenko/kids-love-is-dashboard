@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kids-love-is-dashboard/static/css/main.f9906e2e.css",
-    "main.js": "/kids-love-is-dashboard/static/js/main.798f9c93.js",
+    "main.css": "/kids-love-is-dashboard/static/css/main.e0e42279.css",
+    "main.js": "/kids-love-is-dashboard/static/js/main.4e123937.js",
     "index.html": "/kids-love-is-dashboard/index.html",
-    "main.f9906e2e.css.map": "/kids-love-is-dashboard/static/css/main.f9906e2e.css.map",
-    "main.798f9c93.js.map": "/kids-love-is-dashboard/static/js/main.798f9c93.js.map"
+    "main.e0e42279.css.map": "/kids-love-is-dashboard/static/css/main.e0e42279.css.map",
+    "main.4e123937.js.map": "/kids-love-is-dashboard/static/js/main.4e123937.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9906e2e.css",
-    "static/js/main.798f9c93.js"
+    "static/css/main.e0e42279.css",
+    "static/js/main.4e123937.js"
   ]
 }
